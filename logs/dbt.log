@@ -1,0 +1,601 @@
+[0m18:34:39.316239 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE9922BA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE99212510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE992115D0>]}
+
+
+============================== 18:34:39.330917 | 88cbd3ac-84be-47c0-b5e6-ca8ba4df73b3 ==============================
+[0m18:34:39.330917 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:34:39.331913 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m18:34:47.673818 [debug] [MainThread]: Starter project path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Lib\site-packages\dbt\include\starter_project
+[0m18:34:47.711940 [info ] [MainThread]: 
+Your new dbt project "first_steps_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:34:47.712950 [info ] [MainThread]: Setting up your profile.
+[0m18:34:50.224133 [debug] [MainThread]: Command `dbt init` succeeded at 18:34:50.223015 after 10.97 seconds
+[0m18:34:50.224133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE92FF2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE92FF27D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FE92FF2850>]}
+[0m18:34:50.225342 [debug] [MainThread]: Flushing usage events
+[0m18:36:06.945786 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D18C41290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D18BF0B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D18C25950>]}
+
+
+============================== 18:36:06.950313 | f0baa3f8-944d-46c9-85bc-0ab9de71cdc8 ==============================
+[0m18:36:06.950313 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:36:06.951318 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:36:06.952836 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:36:06.954110 [info ] [MainThread]: python version: 3.11.9
+[0m18:36:06.954110 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:36:06.955113 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:36:07.038183 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:36:07.039287 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:36:07.039287 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:36:07.040289 [info ] [MainThread]: Configuration:
+[0m18:36:07.041295 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:36:07.041295 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:36:07.042288 [info ] [MainThread]: Required dependencies:
+[0m18:36:07.042798 [debug] [MainThread]: Executing "git --help"
+[0m18:36:07.078545 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:36:07.079565 [debug] [MainThread]: STDERR: "b''"
+[0m18:36:07.080571 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:36:07.082087 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:36:07.082087 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:36:07.083604 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "first_steps_dbt", target "dev" invalid: ['schema'] is not valid under any of the given schemas
+
+
+[0m18:36:07.084234 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:36:07.084234 [debug] [MainThread]: Command `dbt debug` failed at 18:36:07.084234 after 0.23 seconds
+[0m18:36:07.085429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D18A1BA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D12AC2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D12AC27D0>]}
+[0m18:36:07.085429 [debug] [MainThread]: Flushing usage events
+[0m18:39:57.932925 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E7911150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E78F2510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E78F0FD0>]}
+
+
+============================== 18:39:57.937340 | 39d5929f-7f11-48cd-9f1a-4cd8b5a362c0 ==============================
+[0m18:39:57.937340 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:39:57.938350 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:39:57.939427 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:39:57.940428 [info ] [MainThread]: python version: 3.11.9
+[0m18:39:57.940428 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:39:57.941935 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:39:58.027567 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:39:58.028567 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:39:58.029567 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:39:58.029567 [info ] [MainThread]: Configuration:
+[0m18:39:58.030566 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:39:58.030566 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:39:58.030566 [info ] [MainThread]: Required dependencies:
+[0m18:39:58.032072 [debug] [MainThread]: Executing "git --help"
+[0m18:39:58.071022 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:39:58.071022 [debug] [MainThread]: STDERR: "b''"
+[0m18:39:58.072021 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:39:58.072021 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:39:58.073406 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:39:58.073406 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "erp_dbt_mysql", target "dev" invalid: ['database'] is not valid under any of the given schemas
+
+
+[0m18:39:58.074416 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:39:58.074965 [debug] [MainThread]: Command `dbt debug` failed at 18:39:58.074965 after 0.20 seconds
+[0m18:39:58.075972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E78F26D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E7AE7150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000154E78F2A50>]}
+[0m18:39:58.075972 [debug] [MainThread]: Flushing usage events
+[0m18:40:26.689258 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEF5610690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEF3BEAB10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEF5643510>]}
+
+
+============================== 18:40:26.692876 | 31c73e3e-841d-442b-a20c-df0dfe5d0837 ==============================
+[0m18:40:26.692876 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:40:26.694114 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:40:26.694114 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:40:26.695113 [info ] [MainThread]: python version: 3.11.9
+[0m18:40:26.695113 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:40:26.696112 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:40:26.756909 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:40:26.757908 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:40:26.758908 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:40:26.758908 [info ] [MainThread]: Configuration:
+[0m18:40:26.759909 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:40:26.759909 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:40:26.761013 [info ] [MainThread]: Required dependencies:
+[0m18:40:26.761013 [debug] [MainThread]: Executing "git --help"
+[0m18:40:26.802963 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:40:26.803971 [debug] [MainThread]: STDERR: "b''"
+[0m18:40:26.804492 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:40:26.805512 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:40:26.805512 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:40:26.806622 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "erp_dbt_mysql", target "dev" invalid: ['database'] is not valid under any of the given schemas
+
+
+[0m18:40:26.807625 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:40:26.808645 [debug] [MainThread]: Command `dbt debug` failed at 18:40:26.808645 after 0.18 seconds
+[0m18:40:26.809624 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEF5665F10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEEF532990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001EEEF532850>]}
+[0m18:40:26.809624 [debug] [MainThread]: Flushing usage events
+[0m18:41:12.782162 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D1DA13510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D1D629E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D1DA10D50>]}
+
+
+============================== 18:41:12.786822 | 7e9743e1-eb13-4459-bea4-31b4ded0eaf2 ==============================
+[0m18:41:12.786822 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:41:12.787831 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:12.787831 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:41:12.788984 [info ] [MainThread]: python version: 3.11.9
+[0m18:41:12.788984 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:41:12.788984 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:41:12.862206 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:41:12.863295 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:41:12.863295 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:41:12.864489 [info ] [MainThread]: Configuration:
+[0m18:41:12.864489 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:41:12.864489 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:41:12.865503 [info ] [MainThread]: Required dependencies:
+[0m18:41:12.866589 [debug] [MainThread]: Executing "git --help"
+[0m18:41:12.917831 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:41:12.918827 [debug] [MainThread]: STDERR: "b''"
+[0m18:41:12.919826 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:41:12.919826 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:41:12.920921 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:41:12.920921 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "erp_dbt_mysql", target "dev" invalid: ['database'] is not valid under any of the given schemas
+
+
+[0m18:41:12.920921 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:41:12.921922 [debug] [MainThread]: Command `dbt debug` failed at 18:41:12.921922 after 0.20 seconds
+[0m18:41:12.923094 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D1D9F0D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D1DA491D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027D17882810>]}
+[0m18:41:12.923094 [debug] [MainThread]: Flushing usage events
+[0m18:41:23.974883 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11FE43FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11FDE7610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11FC0B550>]}
+
+
+============================== 18:41:23.978896 | 607147f0-27cc-4686-ac8c-9cf704588c86 ==============================
+[0m18:41:23.978896 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:41:23.979898 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:23.979898 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:41:23.980900 [info ] [MainThread]: python version: 3.11.9
+[0m18:41:23.980900 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:41:23.981895 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:41:24.045966 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:41:24.046962 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:41:24.046962 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:41:24.046962 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:41:24.049525 [debug] [MainThread]: Command `dbt debug` failed at 18:41:24.048438 after 0.13 seconds
+[0m18:41:24.049525 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11FE43290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11FE43590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F11F411010>]}
+[0m18:41:24.050330 [debug] [MainThread]: Flushing usage events
+[0m18:41:29.873874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA4F06010>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA4EE7C90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA4EE7E90>]}
+
+
+============================== 18:41:29.876869 | abfd7acf-4e5b-4cd3-96cc-dfd703f88dd3 ==============================
+[0m18:41:29.876869 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:41:29.878377 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:41:29.879387 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:41:29.880388 [info ] [MainThread]: python version: 3.11.9
+[0m18:41:29.880388 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:41:29.880388 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:41:29.944722 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:41:29.945428 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:41:29.945428 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:41:29.946848 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:41:29.947847 [debug] [MainThread]: Command `dbt debug` failed at 18:41:29.947847 after 0.13 seconds
+[0m18:41:29.947847 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA4D0B5D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016AA4BC1F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016A9FD52990>]}
+[0m18:41:29.948847 [debug] [MainThread]: Flushing usage events
+[0m18:42:59.736223 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A9D324D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A98BA1D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A7C02810>]}
+
+
+============================== 18:42:59.740541 | ac371a56-c4af-4666-8d7d-547ecfc17c16 ==============================
+[0m18:42:59.740541 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:42:59.741543 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:42:59.742050 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:42:59.743073 [info ] [MainThread]: python version: 3.11.9
+[0m18:42:59.743073 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:42:59.744087 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:42:59.805306 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:42:59.805665 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:42:59.805665 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:42:59.806675 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:42:59.807673 [debug] [MainThread]: Command `dbt debug` failed at 18:42:59.807673 after 0.14 seconds
+[0m18:42:59.808674 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A9D10790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A9B1BA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000193A9CF0AD0>]}
+[0m18:42:59.808674 [debug] [MainThread]: Flushing usage events
+[0m18:43:19.070273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245789F1550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245789F2850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245789F2190>]}
+
+
+============================== 18:43:19.073785 | d338c9c0-1c4b-43ba-b337-0f4905458b5c ==============================
+[0m18:43:19.073785 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:43:19.074392 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:19.075408 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:43:19.075408 [info ] [MainThread]: python version: 3.11.9
+[0m18:43:19.076417 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:43:19.076417 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:43:19.077417 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Syntax error near line 35
+  ------------------------------
+  32 |       password: '123'
+  33 |       driver: MySQL ODBC 8.0 ANSI Driver
+  34 |     {# prod:
+  35 |       type: mysql
+  36 |       server: 192.168.3.26
+  37 |       port: 3307  
+  38 |       database: DBTPRD # optional, should be same as schema
+  
+  Raw Error:
+  ------------------------------
+  while scanning a simple key
+    in "<unicode string>", line 34, column 5
+  could not find expected ':'
+    in "<unicode string>", line 35, column 7
+[0m18:43:19.088019 [debug] [MainThread]: Command `dbt debug` failed at 18:43:19.088019 after 0.05 seconds
+[0m18:43:19.089150 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245789F3E90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000245789F2810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024572882810>]}
+[0m18:43:19.089150 [debug] [MainThread]: Flushing usage events
+[0m18:43:44.094294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B5DF2990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B5DF2050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B5DF28D0>]}
+
+
+============================== 18:43:44.098292 | b3348c33-11e7-4213-906b-b900a7e42593 ==============================
+[0m18:43:44.098292 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:43:44.099292 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:43:44.100298 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:43:44.100298 [info ] [MainThread]: python version: 3.11.9
+[0m18:43:44.101291 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:43:44.101291 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:43:44.163079 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:43:44.164094 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:43:44.164094 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:43:44.165263 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:43:44.166620 [debug] [MainThread]: Command `dbt debug` failed at 18:43:44.166620 after 0.13 seconds
+[0m18:43:44.167126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B5E48FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B3459710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E6B6027F50>]}
+[0m18:43:44.167126 [debug] [MainThread]: Flushing usage events
+[0m18:44:20.197705 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016035B43F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016035B43590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016035B11A90>]}
+
+
+============================== 18:44:20.202622 | 6ce7da8a-b495-48ba-9d34-38e2672c8f90 ==============================
+[0m18:44:20.202622 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:44:20.203128 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m18:44:20.204224 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:44:20.204224 [info ] [MainThread]: python version: 3.11.9
+[0m18:44:20.205510 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:44:20.205510 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:44:20.267226 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:44:20.267635 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:44:20.268646 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:44:20.268646 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:44:20.269643 [debug] [MainThread]: Command `dbt debug` failed at 18:44:20.269643 after 0.13 seconds
+[0m18:44:20.270642 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016035AF2710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001602F921C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016035B43DD0>]}
+[0m18:44:20.270642 [debug] [MainThread]: Flushing usage events
+[0m18:46:17.321919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171AF910890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171AD49C0D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171AF70B590>]}
+
+
+============================== 18:46:17.325527 | 72db9324-e672-44a8-bb12-615fdaceab9e ==============================
+[0m18:46:17.325527 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:46:17.326915 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:46:17.326915 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:46:17.328020 [info ] [MainThread]: python version: 3.11.9
+[0m18:46:17.328020 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:46:17.329017 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:46:17.390338 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:46:17.391846 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:46:17.391846 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:46:17.392855 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:46:17.393790 [debug] [MainThread]: Command `dbt debug` failed at 18:46:17.393790 after 0.13 seconds
+[0m18:46:17.393790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171AF8F2A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171AF943590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000171A9881C10>]}
+[0m18:46:17.394931 [debug] [MainThread]: Flushing usage events
+[0m18:47:38.475544 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887F02D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887F02F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887F03690>]}
+
+
+============================== 18:47:38.475544 | fb2b46d2-8f44-49e3-881a-ace876167a48 ==============================
+[0m18:47:38.475544 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:47:38.475544 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'log_path': 'logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m18:47:38.475544 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:47:38.482071 [info ] [MainThread]: python version: 3.11.9
+[0m18:47:38.482071 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:47:38.483090 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:47:38.538219 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:47:38.538219 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:47:38.542020 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:47:38.542020 [info ] [MainThread]: Configuration:
+[0m18:47:38.543040 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:47:38.543040 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:47:38.543040 [info ] [MainThread]: Required dependencies:
+[0m18:47:38.543040 [debug] [MainThread]: Executing "git --help"
+[0m18:47:38.575671 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:47:38.578772 [debug] [MainThread]: STDERR: "b''"
+[0m18:47:38.578772 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:47:38.578772 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:47:38.578772 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:47:38.578772 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "first_steps_dbt", target "dev" invalid: ['schema'] is not of type 'string'
+
+
+[0m18:47:38.582314 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:47:38.582835 [debug] [MainThread]: Command `dbt debug` failed at 18:47:38.582835 after 0.17 seconds
+[0m18:47:38.582835 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887D0B490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887F1F150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001E887D0B590>]}
+[0m18:47:38.582835 [debug] [MainThread]: Flushing usage events
+[0m18:48:01.972790 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D490270D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D47FF3B10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D4901C7D0>]}
+
+
+============================== 18:48:01.972790 | 0b144021-ea54-4972-b0d5-890f0c26344f ==============================
+[0m18:48:01.972790 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:48:01.972790 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:48:01.972790 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:48:01.979105 [info ] [MainThread]: python version: 3.11.9
+[0m18:48:01.979105 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:48:01.979105 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:48:02.036821 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:48:02.036821 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:48:02.039083 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:48:02.039083 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:48:02.039083 [debug] [MainThread]: Command `dbt debug` failed at 18:48:02.039083 after 0.13 seconds
+[0m18:48:02.042244 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D49013790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D49011ED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023D42E42850>]}
+[0m18:48:02.042765 [debug] [MainThread]: Flushing usage events
+[0m18:48:18.102935 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001971911E150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019719111110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019719110790>]}
+
+
+============================== 18:48:18.102935 | e92108df-25a9-420a-818f-0f6374916863 ==============================
+[0m18:48:18.102935 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:48:18.102935 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:48:18.111953 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:48:18.111953 [info ] [MainThread]: python version: 3.11.9
+[0m18:48:18.112999 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:48:18.112999 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:48:18.168088 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:48:18.168088 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:48:18.168088 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:48:18.172135 [info ] [MainThread]: adapter type: mysql
+[0m18:48:18.172652 [info ] [MainThread]: adapter version: 1.7.0
+[0m18:48:18.173671 [info ] [MainThread]: Configuration:
+[0m18:48:18.173671 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:48:18.174685 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:48:18.174685 [info ] [MainThread]: Required dependencies:
+[0m18:48:18.174685 [debug] [MainThread]: Executing "git --help"
+[0m18:48:18.212271 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:48:18.212786 [debug] [MainThread]: STDERR: "b''"
+[0m18:48:18.213728 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:48:18.213728 [info ] [MainThread]: Connection:
+[0m18:48:18.214920 [info ] [MainThread]:   server: 192.168.3.26
+[0m18:48:18.215426 [info ] [MainThread]:   unix_socket: None
+[0m18:48:18.215426 [info ] [MainThread]:   port: 3307
+[0m18:48:18.215426 [info ] [MainThread]:   database: None
+[0m18:48:18.215426 [info ] [MainThread]:   schema: DBTDEV
+[0m18:48:18.217793 [info ] [MainThread]:   user: acessoDBT
+[0m18:48:18.218302 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m18:48:18.218302 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m18:48:18.218302 [debug] [MainThread]: Using mysql connection "debug"
+[0m18:48:18.218302 [debug] [MainThread]: On debug: select 1 as id
+[0m18:48:18.218302 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:48:18.303579 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m18:48:18.303579 [debug] [MainThread]: On debug: Close
+[0m18:48:18.306840 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:48:18.308038 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:48:18.308549 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:48:18.309966 [debug] [MainThread]: Command `dbt debug` failed at 18:48:18.309966 after 0.27 seconds
+[0m18:48:18.310473 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:48:18.310979 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019719249CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019719327990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000019712EC2810>]}
+[0m18:48:18.310979 [debug] [MainThread]: Flushing usage events
+[0m18:49:00.574836 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B3D5106D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B3D31F750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B3BB10B10>]}
+
+
+============================== 18:49:00.578812 | 1551c932-25bf-4188-900c-a6d0f899ee31 ==============================
+[0m18:49:00.578812 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:49:00.578812 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'log_path': 'logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:49:00.581283 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:49:00.582289 [info ] [MainThread]: python version: 3.11.9
+[0m18:49:00.582803 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:49:00.582803 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:49:00.634328 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:49:00.634328 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:49:00.634328 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:49:00.634328 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:49:00.640741 [debug] [MainThread]: Command `dbt debug` failed at 18:49:00.640741 after 0.13 seconds
+[0m18:49:00.640741 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B3D4F0CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B3D543590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022B37422990>]}
+[0m18:49:00.640741 [debug] [MainThread]: Flushing usage events
+[0m18:49:47.642905 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4BA34E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4B9F0F90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4BA1E310>]}
+
+
+============================== 18:49:47.651915 | 2d9d0125-481c-4215-94ea-b1efe51a34dc ==============================
+[0m18:49:47.651915 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:49:47.652958 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:49:47.654019 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:49:47.654564 [info ] [MainThread]: python version: 3.11.9
+[0m18:49:47.654564 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:49:47.654564 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:49:47.705966 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:49:47.705966 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:49:47.705966 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:49:47.712103 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m18:49:47.712645 [debug] [MainThread]: Command `dbt debug` failed at 18:49:47.712645 after 0.13 seconds
+[0m18:49:47.713691 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4B6C1710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4B81BA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001BD4BC27F50>]}
+[0m18:49:47.713691 [debug] [MainThread]: Flushing usage events
+[0m18:50:07.963764 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015106C7E6D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015107E10A90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015107E12910>]}
+
+
+============================== 18:50:07.967703 | 3e2e5a5e-dc6b-4ebc-8695-0ad623894cb8 ==============================
+[0m18:50:07.967703 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:50:07.967703 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:50:07.967703 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:50:07.967703 [info ] [MainThread]: python version: 3.11.9
+[0m18:50:07.972264 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:50:07.972779 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:50:08.030631 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:50:08.030631 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:50:08.032138 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:50:08.032681 [info ] [MainThread]: adapter type: mysql
+[0m18:50:08.032681 [info ] [MainThread]: adapter version: 1.7.0
+[0m18:50:08.033706 [info ] [MainThread]: Configuration:
+[0m18:50:08.033706 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:50:08.033706 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:50:08.033706 [info ] [MainThread]: Required dependencies:
+[0m18:50:08.033706 [debug] [MainThread]: Executing "git --help"
+[0m18:50:08.066887 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:50:08.066887 [debug] [MainThread]: STDERR: "b''"
+[0m18:50:08.066887 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:50:08.066887 [info ] [MainThread]: Connection:
+[0m18:50:08.066887 [info ] [MainThread]:   server: 192.168.3.26
+[0m18:50:08.066887 [info ] [MainThread]:   unix_socket: None
+[0m18:50:08.072051 [info ] [MainThread]:   port: 3307
+[0m18:50:08.072051 [info ] [MainThread]:   database: None
+[0m18:50:08.073064 [info ] [MainThread]:   schema: DBTDEV
+[0m18:50:08.073064 [info ] [MainThread]:   user: acessoDBT
+[0m18:50:08.073064 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m18:50:08.073064 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m18:50:08.073064 [debug] [MainThread]: Using mysql connection "debug"
+[0m18:50:08.073064 [debug] [MainThread]: On debug: select 1 as id
+[0m18:50:08.073064 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:50:08.124733 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m18:50:08.124733 [debug] [MainThread]: On debug: Close
+[0m18:50:08.124733 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:50:08.124733 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:50:08.124733 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:50:08.124733 [debug] [MainThread]: Command `dbt debug` failed at 18:50:08.124733 after 0.23 seconds
+[0m18:50:08.124733 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:50:08.124733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015107E43590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015107C1BA90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000015107FEAC10>]}
+[0m18:50:08.132042 [debug] [MainThread]: Flushing usage events
+[0m18:50:52.792855 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B21E92BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B21E91E210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B21E91CA10>]}
+
+
+============================== 18:50:52.792855 | cf737a6c-0bba-4031-b93d-3ca9133ad04e ==============================
+[0m18:50:52.792855 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:50:52.802865 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m18:50:52.804141 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:50:52.804141 [info ] [MainThread]: python version: 3.11.9
+[0m18:50:52.804141 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:50:52.804141 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:50:52.853918 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:50:52.853918 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:50:52.853918 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:50:52.862063 [info ] [MainThread]: adapter type: mysql
+[0m18:50:52.862063 [info ] [MainThread]: adapter version: 1.7.0
+[0m18:50:52.863080 [info ] [MainThread]: Configuration:
+[0m18:50:52.863080 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:50:52.863080 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:50:52.863080 [info ] [MainThread]: Required dependencies:
+[0m18:50:52.864847 [debug] [MainThread]: Executing "git --help"
+[0m18:50:52.895981 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:50:52.897337 [debug] [MainThread]: STDERR: "b''"
+[0m18:50:52.897337 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:50:52.897337 [info ] [MainThread]: Connection:
+[0m18:50:52.897337 [info ] [MainThread]:   server: 192.168.3.26
+[0m18:50:52.897337 [info ] [MainThread]:   unix_socket: None
+[0m18:50:52.897337 [info ] [MainThread]:   port: 3307
+[0m18:50:52.897337 [info ] [MainThread]:   database: None
+[0m18:50:52.897337 [info ] [MainThread]:   schema: DBTDEV
+[0m18:50:52.897337 [info ] [MainThread]:   user: acessoDBT
+[0m18:50:52.901875 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m18:50:52.901875 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m18:50:52.902945 [debug] [MainThread]: Using mysql connection "debug"
+[0m18:50:52.902945 [debug] [MainThread]: On debug: select 1 as id
+[0m18:50:52.903945 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:50:52.962886 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m18:50:52.964634 [debug] [MainThread]: On debug: Close
+[0m18:50:52.966643 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:50:52.966643 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:50:52.966643 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:50:52.968651 [debug] [MainThread]: Command `dbt debug` failed at 18:50:52.968651 after 0.23 seconds
+[0m18:50:52.968651 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:50:52.970659 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B21E92BA10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B21AED30D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002B218782810>]}
+[0m18:50:52.970659 [debug] [MainThread]: Flushing usage events
+[0m18:54:58.597902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3EFA0D050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3EF6C1710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3EF6C1D90>]}
+
+
+============================== 18:54:58.603112 | 94eed3d5-9a94-4a52-8a93-2a370b3504a0 ==============================
+[0m18:54:58.603112 [info ] [MainThread]: Running with dbt=1.7.19
+[0m18:54:58.603112 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\vinic\\.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'invocation_command': 'dbt debug', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m18:54:58.603112 [info ] [MainThread]: dbt version: 1.7.19
+[0m18:54:58.603112 [info ] [MainThread]: python version: 3.11.9
+[0m18:54:58.603112 [info ] [MainThread]: python path: C:\Users\vinic\Documents\Programacao\DBT\dbt-venv\Scripts\python.exe
+[0m18:54:58.603112 [info ] [MainThread]: os info: Windows-10-10.0.26100-SP0
+[0m18:54:58.661498 [info ] [MainThread]: Using profiles dir at C:\Users\vinic\.dbt
+[0m18:54:58.662003 [info ] [MainThread]: Using profiles.yml file at C:\Users\vinic\.dbt\profiles.yml
+[0m18:54:58.663020 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml
+[0m18:54:58.663020 [info ] [MainThread]: adapter type: mysql
+[0m18:54:58.664079 [info ] [MainThread]: adapter version: 1.7.0
+[0m18:54:58.664079 [info ] [MainThread]: Configuration:
+[0m18:54:58.664079 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m18:54:58.664079 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:54:58.664079 [info ] [MainThread]: Required dependencies:
+[0m18:54:58.664079 [debug] [MainThread]: Executing "git --help"
+[0m18:54:58.693039 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:54:58.699770 [debug] [MainThread]: STDERR: "b''"
+[0m18:54:58.699770 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:54:58.699770 [info ] [MainThread]: Connection:
+[0m18:54:58.699770 [info ] [MainThread]:   server: 192.168.3.26
+[0m18:54:58.702283 [info ] [MainThread]:   unix_socket: None
+[0m18:54:58.702802 [info ] [MainThread]:   port: 3307
+[0m18:54:58.702802 [info ] [MainThread]:   database: None
+[0m18:54:58.702802 [info ] [MainThread]:   schema: DBTDEV
+[0m18:54:58.702802 [info ] [MainThread]:   user: acessoDBT
+[0m18:54:58.702802 [info ] [MainThread]: Registered adapter: mysql=1.7.0
+[0m18:54:58.702802 [debug] [MainThread]: Acquiring new mysql connection 'debug'
+[0m18:54:58.702802 [debug] [MainThread]: Using mysql connection "debug"
+[0m18:54:58.702802 [debug] [MainThread]: On debug: select 1 as id
+[0m18:54:58.706961 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m18:54:58.762828 [debug] [MainThread]: SQL status: SUCCESS 1 in 0.0 seconds
+[0m18:54:58.762828 [debug] [MainThread]: On debug: Close
+[0m18:54:58.762828 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m18:54:58.762828 [info ] [MainThread]: [31m1 check failed:[0m
+[0m18:54:58.762828 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\vinic\Documents\Programacao\DBT\dbt_project.yml> not found
+
+[0m18:54:58.762828 [debug] [MainThread]: Command `dbt debug` failed at 18:54:58.762828 after 0.22 seconds
+[0m18:54:58.762828 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m18:54:58.762828 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3EF81FA50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3EF010E50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001F3E9882810>]}
+[0m18:54:58.762828 [debug] [MainThread]: Flushing usage events

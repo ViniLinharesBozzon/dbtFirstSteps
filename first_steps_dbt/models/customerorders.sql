@@ -1,0 +1,23 @@
+-- Active: 1733082947651@@192.168.3.26@3307@DBTDEV
+{{ config(materialized='table') }} -- Creating a table as result of the query 
+
+WITH CUSTOMERORDERS AS (
+    SELECT 
+        C.CUSTOMERID
+        , CONCAT(C.FIRSTNAME, ' ', C.LASTNAME) AS CUSTOMERNAME
+        , COUNT(O.ORDERID) AS NO_OF_ORDERS
+    FROM 
+        `DBTDEV`.CUSTOMERS C
+        JOIN `DBTDEV`.ORDERS O ON C.CUSTOMERID = O.CUSTOMERID
+    GROUP BY 
+        C.CUSTOMERID
+        , CUSTOMERNAME
+    ORDER BY 
+        CUSTOMERNAME DESC
+)
+SELECT 
+    CUSTOMERID
+    , CUSTOMERNAME
+    , NO_OF_ORDERS
+FROM 
+    CUSTOMERORDERS
