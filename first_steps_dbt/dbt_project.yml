@@ -40,7 +40,7 @@ models:
       schema: BRONZE
     customerrevenue:
       materialized: table
-      schema: silver
+#      schema: silver
     orders_fact:
       materialized: table
-      schema: silver
+#      schema: silver
