@@ -31,6 +31,16 @@ clean-targets:         # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   first_steps_dbt:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    ## First dealing with the bronze tables
+    customers_stg:
+      schema: BRONZE
+    orders_stg:
+      schema: BRONZE
+    ordemitems:
+      schema: BRONZE
+    customerrevenue:
+      materialized: table
+      schema: silver
+    orders_fact:
+      materialized: table
+      schema: silver
