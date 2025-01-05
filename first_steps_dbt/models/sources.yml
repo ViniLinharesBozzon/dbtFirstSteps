@@ -1,0 +1,11 @@
+sources:
+    - name:     bronzeSchema
+      database: BRONZE 
+      schema:   BRONZE
+      tables: 
+        - name:       cust
+          identifier: customers
+        - name:       ordr
+          identifier: orders
+        - name:       ordritms
+          identifier: orderitems

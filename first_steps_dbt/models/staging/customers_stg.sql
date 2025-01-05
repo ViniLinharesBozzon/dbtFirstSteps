@@ -11,4 +11,4 @@ SELECT
     , Update_at
     , CONCAT(FirstName, ' ', LastName) AS CustomerName
 FROM
-    BRONZE.CUSTOMERS
+    {{ source('bronzeSchema', 'cust') }}

@@ -7,4 +7,4 @@ SELECT
     , update_at
     , Quantity * UnitPrice AS TotalPrice
 FROM
-    BRONZE.ORDERITEMS
+    {{ source('bronzeSchema', 'ordritms') }}

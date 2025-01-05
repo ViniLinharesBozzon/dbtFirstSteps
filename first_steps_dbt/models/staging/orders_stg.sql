@@ -13,4 +13,4 @@ SELECT
     END                     AS StatusDesc
     , status                AS statusCD
 FROM
-    BRONZE.ORDERS
+    {{ source('bronzeSchema', 'ordr') }}
